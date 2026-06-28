@@ -13,7 +13,7 @@
 3. Enable the 'Developer Mode' toggle in the top right
 4. Click 'Load Unpacked' and select this folder.
 
-## Features
+# Features
 ### Major Features
 - Sort 'files' evidence alphabetically.  
 - Backup 'free text' evidence locally.  
@@ -27,5 +27,6 @@
 - Remove banner and empty space on main page.
 - Hide header
 
-## NOT AFFILIATED DON'T SUE THANKS
-No affiliation with BrightSpace!!!
+# Other Used Resources
+
+Kitty by xzany
