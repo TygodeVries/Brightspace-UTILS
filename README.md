@@ -1,6 +1,10 @@
 # Brightspace UTILS
 ## NOT AFFILIATED DON'T SUE THANKS
-No affiliation with BrightSpace!!!
+- No affiliation with BrightSpace or Portflow.
+- Using on your own risk!  
+- Always check for errors and mistakes.  
+- I am not responsible for any damages caused by using this extension.  
+- It could break any day with BrightSpace updates.  
 
 # Installation
 
