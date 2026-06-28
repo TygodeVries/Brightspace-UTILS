@@ -1,0 +1,57 @@
+{
+  "manifest_version": 3,
+  "name": "Brightspace Utils",
+  "version": "3.0",
+  "description": "Utilities for Brightspace. No affiliation with BrightSpace. Use at your own risk.",
+  "author": "Tygo de Vries",
+  "permissions": ["storage", "clipboardRead"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "utils/background.js"
+  },
+  "icons": {
+    "128": "assets/icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.brightspace.com/*",
+        "*://brightspace.hanze.nl/*",
+        "*://*.portflow.app/*",
+        "*://*.drieam.app/*"
+      ],
+      "js": [
+        
+        "fun/kitty.js", 
+        
+        "portflow/image-paste.js", 
+        "portflow/order-files.js", 
+        "portflow/text-backup.js",
+
+        "looks/smaller-navigation.js",
+        
+        "portfolio-exporting/export-inject.js", 
+        
+        "quality-of-life/autoselect-field.js", 
+        "quality-of-life/freetext-button.js", 
+        "quality-of-life/include-all-snapshot.js", 
+        "quality-of-life/remove-alerts.js", 
+        "quality-of-life/remove-banner.js", 
+        
+        "utils/jszip.min.js"],
+      "run_at": "document_idle",
+      "all_frames": true
+    }
+  ],
+  "host_permissions": [
+    "https://*.amazonaws.com/"
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["utils/request-intercepts.js", "assets/Kitty.gif", "popup.js", "assets/portfolio/style.css"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
